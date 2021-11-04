@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:rotation="90">
+
+            <Button
+                android:id="@+id/graphCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Exit"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/graph">
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="280dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:rotation="90">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/LogLeft"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="L"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/LogText"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="GPSlog 1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/LogRight"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="R"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <SeekBar
+                        android:id="@+id/LogStart"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:gravity="center_horizontal"
+                        android:textSize="20sp" />
+
+                    <SeekBar
+                        android:id="@+id/LogEnd"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:gravity="center_horizontal"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/NumStart"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:gravity="center_horizontal"
+                        android:text="1"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/NumEnd"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:gravity="center_horizontal"
+                        android:text="1"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/SaveLog"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="SAVE"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/DelLog"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="DEL"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/LoadLog"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="LOAD"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/PrevPath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="PREV"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/PathText"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Path 1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/NextPath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="NEXT"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
